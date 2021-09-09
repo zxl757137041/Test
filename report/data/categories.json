@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert False == True\n +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\n +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\n +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\n +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "children" : [ {
+        "name" : "test_update_order",
+        "uid" : "e56e62f7f160526a",
+        "parentUid" : "8ee8de57e57e268ae80025d1b2741567",
+        "status" : "failed",
+        "time" : {
+          "start" : 1630653836533,
+          "stop" : 1630653837024,
+          "duration" : 491
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ee8de57e57e268ae80025d1b2741567"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

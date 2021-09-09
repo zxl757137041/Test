@@ -1,0 +1,117 @@
+{
+  "7fa390c998885e3f7581e68d2a1abb3d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc8871502b402d20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630653832160,
+        "stop" : 1630653833847,
+        "duration" : 1687
+      }
+    } ]
+  },
+  "96f6db6de333058317b918ba25a8ba78" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4021768fcb1bf2ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630653834987,
+        "stop" : 1630653836524,
+        "duration" : 1537
+      }
+    } ]
+  },
+  "b7bc2ca610982543f7f6dbed65f1917c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e56e62f7f160526a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert False == True\n +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\n +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\n +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\n +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+      "time" : {
+        "start" : 1630653836533,
+        "stop" : 1630653837024,
+        "duration" : 491
+      }
+    } ]
+  },
+  "6072cc3cbfd3a77322c1758881f87536" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c6262c50f9501ad5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630653834371,
+        "stop" : 1630653834419,
+        "duration" : 48
+      }
+    } ]
+  },
+  "031f4329164021be1d9d1151bf2923fc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "428ec38b7cbf65b0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630653834428,
+        "stop" : 1630653834974,
+        "duration" : 546
+      }
+    } ]
+  },
+  "f59a4b03cd973b712ac32fef9e58d65d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7f66964fd4c248b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1630653833857,
+        "stop" : 1630653834363,
+        "duration" : 506
+      }
+    } ]
+  }
+}

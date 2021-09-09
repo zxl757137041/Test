@@ -1,0 +1,140 @@
+{
+  "uid" : "e56e62f7f160526a",
+  "name" : "test_update_order",
+  "fullName" : "testcases.sales.order.test_update.TestUpdateOrder#test_update_order",
+  "historyId" : "b7bc2ca610982543f7f6dbed65f1917c",
+  "time" : {
+    "start" : 1630653836533,
+    "stop" : 1630653837024,
+    "duration" : 491
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert False == True\n +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\n +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\n +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\n +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+  "statusTrace" : "self = <testcases.sales.order.test_update.TestUpdateOrder object at 0x000001DE4CD346A0>\n\n    def test_update_order(self):\n    \n        url = \"http://120.79.172.137:8001/order/sales/order/api/update\"\n    \n        payload = json.dumps({\n            \"clientId\": 1427879077875810304,\n            \"clientName\": \"广东省_深圳市_沃尔玛（中国）投资有限公司\",\n            \"clientNo\": \"KHWEMZGTZYXGS0013\",\n            \"createdBy\": 1111111111111111200,\n            \"createdByName\": \"XXX\",\n            \"createdOn\": \"2021-08-30T02:24:22.698Z\",\n            \"currencyId\": 1424926520291360768,\n            \"id\": 1432965475247063040,\n            \"paymentMethod\": \"到付\",\n            \"paymentMethodId\": 1425747345462525952,\n            \"paymentTerms\": \"货到3天付款\",\n            \"paymentTermsId\": 1111111111111111200,\n            \"rate\": 5,\n            \"remarks\": \"test\",\n            \"salesContractNo\": \"AB123456\",\n            \"salesDepartment\": \"销售\",\n            \"salesDepartmentId\": 1425773672739635200,\n            \"salesOrderDate\": \"2021-08-30T02:24:22.698Z\",\n            \"salesOrderEntryVoList\": [\n                {\n                    \"actualUnitPrice\": 99.75,\n                    \"amountExcludingTax\": 100,\n                    \"amountExcludingTaxBc\": 105,\n                    \"avlQtyBu\": 100,\n                    \"avlQtyU\": 100,\n                    \"basicUnit\": \"kg\",\n                    \"basicUnitId\": 1405000805769019392,\n                    \"createdBy\": 1111111111111111200,\n                    \"createdByName\": \"XXX\",\n                    \"createdOn\": \"2021-08-30T02:24:22.698Z\",\n                    \"delFlag\": 0,\n                    \"discountAmount\": 95,\n                    \"discountAmountBc\": 95,\n                    \"discountRate\": 5,\n                    \"id\": 1432965475700047872,\n                    \"model\": \"50g\",\n                    \"orderQtyBu\": 200,\n                    \"orderQtyU\": 200,\n                    \"plannedDeliveryDate\": \"2021-08-30T02:24:22.698Z\",\n                    \"predictQtyBu\": 90,\n                    \"predictQtyU\": 90,\n                    \"productId\": 1407911402512842752,\n                    \"productName\": \"芒果半成品\",\n                    \"productNo\": \"BCNMG001\",\n                    \"remarks\": \"test\",\n                    \"salesOrderId\": 1431161870433124352,\n                    \"salesPurposeType\": \"70\",\n                    \"tax\": 1,\n                    \"taxBc\": 100,\n                    \"taxRate\": 100,\n                    \"totalPriceTax\": 100,\n                    \"totalPriceTaxBc\": 100,\n                    \"unit\": \"5包\",\n                    \"unitId\": 1405004270880686080,\n                    \"unitPrice\": 105,\n                    \"unitPriceExclTax\": 100,\n                    \"updatedBy\": 1111111111111111200,\n                    \"updatedByName\": \"XXX\",\n                    \"updatedOn\": \"2021-08-30T02:24:22.698Z\"\n            }\n        ],\n            \"salesOrderNo\": \"string\",\n            \"salesPersonId\": 1427444644932747264,\n            \"salesTypeId\": 65,\n            \"source\": \"string\",\n            \"updatedBy\": 1111111111111111200,\n            \"updatedByName\": \"XXX\",\n            \"updatedOn\": \"2021-08-30T02:24:22.698Z\"\n        })\n        headers = {\n            'USER-SYS-ID': '1',\n            'Content-Type': 'application/json'\n        }\n    \n        response = requests.request(\"POST\", url, headers=headers, data=payload)\n    \n        print(response.json())\n>       assert response.json().get('success') == True\nE       AssertionError: assert False == True\nE        +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\nE        +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\nE        +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\nE        +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json\n\ntestcases\\sales\\order\\test_update.py:87: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_skip_sensitive",
+    "time" : {
+      "start" : 1630653836531,
+      "stop" : 1630653836532,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "sensitive_url",
+    "time" : {
+      "start" : 1630653832156,
+      "stop" : 1630653832156,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_verify_url",
+    "time" : {
+      "start" : 1630653832155,
+      "stop" : 1630653832155,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "base_url",
+    "time" : {
+      "start" : 1630653832155,
+      "stop" : 1630653832155,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert False == True\n +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\n +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\n +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\n +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json",
+    "statusTrace" : "self = <testcases.sales.order.test_update.TestUpdateOrder object at 0x000001DE4CD346A0>\n\n    def test_update_order(self):\n    \n        url = \"http://120.79.172.137:8001/order/sales/order/api/update\"\n    \n        payload = json.dumps({\n            \"clientId\": 1427879077875810304,\n            \"clientName\": \"广东省_深圳市_沃尔玛（中国）投资有限公司\",\n            \"clientNo\": \"KHWEMZGTZYXGS0013\",\n            \"createdBy\": 1111111111111111200,\n            \"createdByName\": \"XXX\",\n            \"createdOn\": \"2021-08-30T02:24:22.698Z\",\n            \"currencyId\": 1424926520291360768,\n            \"id\": 1432965475247063040,\n            \"paymentMethod\": \"到付\",\n            \"paymentMethodId\": 1425747345462525952,\n            \"paymentTerms\": \"货到3天付款\",\n            \"paymentTermsId\": 1111111111111111200,\n            \"rate\": 5,\n            \"remarks\": \"test\",\n            \"salesContractNo\": \"AB123456\",\n            \"salesDepartment\": \"销售\",\n            \"salesDepartmentId\": 1425773672739635200,\n            \"salesOrderDate\": \"2021-08-30T02:24:22.698Z\",\n            \"salesOrderEntryVoList\": [\n                {\n                    \"actualUnitPrice\": 99.75,\n                    \"amountExcludingTax\": 100,\n                    \"amountExcludingTaxBc\": 105,\n                    \"avlQtyBu\": 100,\n                    \"avlQtyU\": 100,\n                    \"basicUnit\": \"kg\",\n                    \"basicUnitId\": 1405000805769019392,\n                    \"createdBy\": 1111111111111111200,\n                    \"createdByName\": \"XXX\",\n                    \"createdOn\": \"2021-08-30T02:24:22.698Z\",\n                    \"delFlag\": 0,\n                    \"discountAmount\": 95,\n                    \"discountAmountBc\": 95,\n                    \"discountRate\": 5,\n                    \"id\": 1432965475700047872,\n                    \"model\": \"50g\",\n                    \"orderQtyBu\": 200,\n                    \"orderQtyU\": 200,\n                    \"plannedDeliveryDate\": \"2021-08-30T02:24:22.698Z\",\n                    \"predictQtyBu\": 90,\n                    \"predictQtyU\": 90,\n                    \"productId\": 1407911402512842752,\n                    \"productName\": \"芒果半成品\",\n                    \"productNo\": \"BCNMG001\",\n                    \"remarks\": \"test\",\n                    \"salesOrderId\": 1431161870433124352,\n                    \"salesPurposeType\": \"70\",\n                    \"tax\": 1,\n                    \"taxBc\": 100,\n                    \"taxRate\": 100,\n                    \"totalPriceTax\": 100,\n                    \"totalPriceTaxBc\": 100,\n                    \"unit\": \"5包\",\n                    \"unitId\": 1405004270880686080,\n                    \"unitPrice\": 105,\n                    \"unitPriceExclTax\": 100,\n                    \"updatedBy\": 1111111111111111200,\n                    \"updatedByName\": \"XXX\",\n                    \"updatedOn\": \"2021-08-30T02:24:22.698Z\"\n            }\n        ],\n            \"salesOrderNo\": \"string\",\n            \"salesPersonId\": 1427444644932747264,\n            \"salesTypeId\": 65,\n            \"source\": \"string\",\n            \"updatedBy\": 1111111111111111200,\n            \"updatedByName\": \"XXX\",\n            \"updatedOn\": \"2021-08-30T02:24:22.698Z\"\n        })\n        headers = {\n            'USER-SYS-ID': '1',\n            'Content-Type': 'application/json'\n        }\n    \n        response = requests.request(\"POST\", url, headers=headers, data=payload)\n    \n        print(response.json())\n>       assert response.json().get('success') == True\nE       AssertionError: assert False == True\nE        +  where False = <built-in method get of dict object at 0x000001DE4CD3DBC0>('success')\nE        +    where <built-in method get of dict object at 0x000001DE4CD3DBC0> = {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...}.get\nE        +      where {'code': 'E0000', 'message': '未知异常,请联系管理员!', 'result': None, 'success': False, ...} = <bound method Response.json of <Response [200]>>()\nE        +        where <bound method Response.json of <Response [200]>> = <Response [200]>.json\n\ntestcases\\sales\\order\\test_update.py:87: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "58f7550f5028ee7f",
+      "name" : "stdout",
+      "source" : "58f7550f5028ee7f.txt",
+      "type" : "text/plain",
+      "size" : 127
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcases.sales.order"
+  }, {
+    "name" : "suite",
+    "value" : "test_update"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUpdateOrder"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-51918AH"
+  }, {
+    "name" : "thread",
+    "value" : "5508-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.sales.order.test_update"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e56e62f7f160526a.json",
+  "parameterValues" : [ ]
+}
